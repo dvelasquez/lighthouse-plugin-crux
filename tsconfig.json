@@ -1,0 +1,19 @@
+{
+  "ts-node": {
+    "compilerOptions": {
+      "module": "UMD"
+    }
+  },
+  "compilerOptions": {
+    "types": ["node"],
+    "target": "ES2019",
+    "declaration": true,
+    "declarationMap": true,
+    "outDir": "./lib",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "esModuleInterop": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.test.ts"]
+}
