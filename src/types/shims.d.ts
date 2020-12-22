@@ -7,7 +7,6 @@
 /// <reference path="../../node_modules/lighthouse/types/gatherer.d.ts" />
 /// <reference path="../../node_modules/lighthouse/types/html-renderer.d.ts" />
 /// <reference path="../../node_modules/lighthouse/types/i18n.d.ts" />
-/// <reference path="../../node_modules/lighthouse/types/isomorphic-fetch.d.ts" />
 /// <reference path="../../node_modules/lighthouse/types/jest.d.ts" />
 /// <reference path="../../node_modules/lighthouse/types/jsonlint-mod.d.ts" />
 /// <reference path="../../node_modules/lighthouse/types/lhr.d.ts" />

@@ -13,7 +13,7 @@ const scoreAllCategories = ReportScoring.scoreAllCategories;
 ReportScoring.scoreAllCategories = function (configCategories, resultsByAuditId) {
   const result = scoreAllCategories(configCategories, resultsByAuditId);
   const fieldPluginCategory = /** @type {CategoryResult | null} */ result['lighthouse-plugin-crux'];
-  if (!fieldPluginCategory) return result;
+  if (fieldPluginCategory) return result;
   fieldPluginCategory.score = getMinScore(fieldPluginCategory, resultsByAuditId);
   return result;
 };
@@ -55,14 +55,14 @@ const plugin: LH.Config.Plugin = {
       // 25 + 15 = 40 (SI + LCP)
       // 15 + 25 = 40 (TTI + TBT)
       // 5 (CLS)
-      { id: 'fcp', weight: 0, group: 'page' },
-      { id: 'lcp', weight: 1, group: 'page' },
-      { id: 'fid', weight: 1, group: 'page' },
-      { id: 'cls', weight: 1, group: 'page' },
-      { id: 'fcp-origin', weight: 0, group: 'origin' },
-      { id: 'lcp-origin', weight: 0, group: 'origin' },
-      { id: 'fid-origin', weight: 0, group: 'origin' },
-      { id: 'cls-origin', weight: 0, group: 'origin' },
+      { id: 'crux-fcp', weight: 0, group: 'page' },
+      { id: 'crux-lcp', weight: 1, group: 'page' },
+      { id: 'crux-fid', weight: 1, group: 'page' },
+      { id: 'crux-cls', weight: 1, group: 'page' },
+      { id: 'crux-fcp-origin', weight: 0, group: 'origin' },
+      { id: 'crux-lcp-origin', weight: 0, group: 'origin' },
+      { id: 'crux-fid-origin', weight: 0, group: 'origin' },
+      { id: 'crux-cls-origin', weight: 0, group: 'origin' },
     ],
   },
 };

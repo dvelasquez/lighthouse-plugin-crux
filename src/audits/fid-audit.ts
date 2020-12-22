@@ -11,7 +11,7 @@ import { Audit } from 'lighthouse';
 module.exports = class FidAudit extends Audit {
   static get meta() {
     return {
-      id: 'fid',
+      id: 'crux-fid',
       title: 'First Input Delay (Url)',
       description: `First Input Delay (FID) quantifies the experience users feel when trying to interact with unresponsive pages. The value is 75th percentile of the origin traffic. [Learn more about FID](https://web.dev/fid/)`,
       scoreDisplayMode: 'numeric',

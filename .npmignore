@@ -1,0 +1,7 @@
+assets
+.idea
+.github
+latest-run
+node_modules
+src
+!lib

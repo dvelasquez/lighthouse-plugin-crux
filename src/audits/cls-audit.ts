@@ -10,7 +10,7 @@ import {
 module.exports = class CLSAudit extends Audit {
   static get meta() {
     return {
-      id: 'cls',
+      id: 'crux-cls',
       title: 'Cumulative Layout Shift (Url)',
       description:
         'Cumulative Layout Shift (CLS) measures visual stability, and it helps quantify how often users experience unexpected layout shifts. The value is 75th percentile of the origin traffic. [Learn more about CLS](https://web.dev/cls/)',

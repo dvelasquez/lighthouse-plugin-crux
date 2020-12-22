@@ -11,7 +11,7 @@ import {
 module.exports = class LcpOriginAudit extends Audit {
   static get meta() {
     return {
-      id: 'lcp-origin',
+      id: 'crux-lcp-origin',
       title: 'Largest Contentful Paint (Origin)',
       description: `Largest Contentful Paint (LCP) marks the time in the page load timeline when the page's main content has likely loaded. The value is 75th percentile of the origin traffic. [Learn more about LCP](https://web.dev/lcp/)`,
       scoreDisplayMode: 'numeric',
