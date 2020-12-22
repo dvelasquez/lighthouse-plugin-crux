@@ -11,7 +11,7 @@ import {
 module.exports = class FcpOriginAudit extends Audit {
   static get meta() {
     return {
-      id: 'fcp-origin',
+      id: 'crux-fcp-origin',
       title: 'First Contentful Paint (Origin)',
       description:
         'First Contentful Paint (FCP) marks the first time in the page load timeline where the user can see anything on the screen. The value is 75th percentile of the origin traffic. [Learn more about FCP](https://web.dev/fcp/)',

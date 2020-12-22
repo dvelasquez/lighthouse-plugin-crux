@@ -20,7 +20,7 @@ export const getLoadingExperience = async (
   isUrl = true,
 ): Promise<CrUXResponseApi> => {
   const cruxToken = context.settings.cruxToken || null;
-  const formFactor: FormFactor = artifacts.settings.emulatedFormFactor === 'desktop' ? 'DESKTOP' : 'PHONE';
+  const formFactor: FormFactor = artifacts.settings.formFactor === 'desktop' ? 'DESKTOP' : 'PHONE';
   const prefix = isUrl ? 'url' : 'origin';
   const { href, origin } = new URL(artifacts.URL.finalUrl);
   const url = `${prefix}:${href}`;
@@ -145,7 +145,7 @@ function formatMetric(metric: string, value: number): string {
 function normalizeMetricValue(metric: string, value: number | string | undefined): number | undefined {
   if (value) {
     const safeValue: number = isNumber(value) ? (value as number) : Number.parseFloat(value.toString());
-    return metric === 'cls' ? safeValue / 100 : safeValue;
+    return safeValue; //metric === 'cls' ? safeValue / 100 : safeValue;
   } else {
     return undefined;
   }
