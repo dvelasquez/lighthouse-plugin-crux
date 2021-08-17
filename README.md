@@ -45,6 +45,12 @@ Use the plugin with [Lighthouse CLI](https://github.com/GoogleChrome/lighthouse)
 $ npx lighthouse https://www.apple.com/ --plugins=lighthouse-plugin-crux
 ```
 
+If you are using the --only-categories option in the CLI, you need to add the `lighthouse-plugin-crux` category to it:
+
+```bash
+$ npx lighthouse https://www.apple.com/ --plugins=lighthouse-plugin-crux --only-categories=performance,lighthouse-plugin-crux
+```
+
 Provide your [Chrome User Experience Report token](https://developers.google.com/web/tools/chrome-user-experience-report/api/guides/getting-started) to run more requests (in production) with a custom config:
 
 ```bash
