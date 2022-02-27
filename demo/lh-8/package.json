@@ -1,0 +1,13 @@
+{
+  "name": "lh-8",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "link:crux": "yarn link lighthouse-plugin-crux",
+    "run:full": "lighthouse https://github.com/GoogleChrome/lighthouse --plugins=lighthouse-plugin-crux --only-categories=lighthouse-plugin-crux --chrome-flags='--headless' --output=json --output-path=../../reports/lh-8.json"
+  },
+  "dependencies": {
+    "lighthouse": "8"
+  }
+}

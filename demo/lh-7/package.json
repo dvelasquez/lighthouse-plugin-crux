@@ -1,0 +1,13 @@
+{
+  "name": "lh-7",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "link:crux": "yarn link lighthouse-plugin-crux",
+    "run:full": "lighthouse https://github.com/GoogleChrome/lighthouse --plugins=lighthouse-plugin-crux --only-categories=lighthouse-plugin-crux --chrome-flags='--headless' --output=json --output-path=../../reports/lh-7.json"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "lighthouse": "7"
+  }
+}
