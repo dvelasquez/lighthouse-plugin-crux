@@ -194,3 +194,4 @@ latest-run
 lib
 results
 reports
+!demo/**/latest-run

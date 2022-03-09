@@ -4,10 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "link:crux": "yarn link lighthouse-plugin-crux",
-    "run:full": "lighthouse https://github.com/GoogleChrome/lighthouse --plugins=lighthouse-plugin-crux --only-categories=lighthouse-plugin-crux --chrome-flags='--headless' --output=json --output-path=../../reports/lh-8.json"
+    "gather": "lighthouse https://github.com/GoogleChrome/lighthouse --plugins=lighthouse-plugin-crux --only-categories=lighthouse-plugin-crux --chrome-flags='--headless' --gather-mode",
+    "run:fast:view": "lighthouse https://github.com/GoogleChrome/lighthouse --plugins=lighthouse-plugin-crux --only-categories=lighthouse-plugin-crux --chrome-flags='--headless' --audit-mode --view --output-path=./results/report.html",
+    "run:fast:json": "lighthouse https://github.com/GoogleChrome/lighthouse --plugins=lighthouse-plugin-crux --only-categories=lighthouse-plugin-crux --chrome-flags='--headless' --audit-mode --output=json --output-path=./results/report.json"
   },
   "dependencies": {
-    "lighthouse": "8"
+    "lighthouse": "8",
+    "lighthouse-plugin-crux": "link:../../"
   }
 }

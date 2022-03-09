@@ -1,16 +1,82 @@
 name: CI
 on: push
 jobs:
-  build:
+  # install_dependencies:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v2
+      
+  #     - name: Use node 16
+  #       uses: actions/setup-node@v2
+  #       with:
+  #         node-version: '16'
+      
+  #     - name: Install dependencies 👨🏻‍💻
+  #       # if: steps.node_modules-cache.outputs.cache-hit != 'true'
+  #       run: yarn --frozen-lockfile
+
+  #     - name: Build
+  #       run: yarn build
+      
+  #     - name: Link to itself
+  #       run: yarn link && yarn link lighthouse-plugin-crux     
+     
+
+  test_lighthouse_7:
     runs-on: ubuntu-latest
+    # needs: install_dependencies
+    defaults:
+      run:
+        working-directory: ./demo/lh-7
     steps:
-      - uses: actions/checkout@v2
-      - name: Use node 12
-        uses: actions/setup-node@v1
+      - name: Use node 16
+        uses: actions/setup-node@v2
         with:
-          node-version: '12.x'
-      - name: Install, link plugin locally, and run
-        run: |
-          yarn install
-          yarn link
-          yarn link lighthouse-plugin-crux
+          node-version: '16'
+
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies in root
+        run: yarn --cwd ../../ install --frozen-lockfile    
+
+      - name: Build dependencies in root
+        run: yarn --cwd ../../ build   
+      
+      - name: Install dependencies, link and run
+        run: yarn --frozen-lockfile
+
+      - name: Run lighthouse with the gathered info
+        run: yarn run:fast:html
+
+      - name: Print json result
+        run: cat ./results/report.html
+  
+  # test_lighthouse_8:
+  #   runs-on: ubuntu-latest
+  #   needs: install_dependencies
+  #   defaults:
+  #     run:
+  #       working-directory: ./demo/lh-8
+  #   steps:
+  #     - name: Use node 16
+  #       uses: actions/setup-node@v1
+  #       with:
+  #         node-version: '16.x'
+
+  #     - uses: actions/checkout@v2
+
+  #     - name: Cache node_modules 📦
+  #       uses: actions/cache@v2.1.6
+  #       with:
+  #         path: |
+  #           **/node_modules
+  #           /home/runner/.cache/Cypress
+  #         key: ${{ runner.os }}-node_modules-v4-${{ hashFiles('**/yarn.lock') }}
+  #         restore-keys: |
+  #           ${{ runner.os }}-node_modules-v4-
+      
+  #     - name: Install dependencies, link and run
+  #       run: yarn --frozen-lockfile
+      
+  #     - name: Link plugin locally, and run
+  #       run: yarn run:full
