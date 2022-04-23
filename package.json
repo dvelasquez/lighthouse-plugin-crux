@@ -27,19 +27,23 @@
     "@typescript-eslint/parser": "4.33.0",
     "cpy-cli": "4.1.0",
     "cross-env": "7.0.3",
-    "devtools-protocol": "0.0.837676",
+    "devtools-protocol": "0.0.859327",
     "eslint": "8.14.0",
     "eslint-config-prettier": "7.1.0",
     "eslint-plugin-prettier": "3.4.1",
     "lerna": "3.22.1",
-    "lighthouse": "7.0.0",
+    "lighthouse": "7.5.0",
     "prettier": "2.5.1",
     "rimraf": "3.0.2",
     "tap": "14.11.0",
     "ts-node": "9.1.1",
+    "typed-query-selector": "2.6.1",
     "typescript": "4.6.2"
   },
   "dependencies": {
     "node-fetch": "^2.6.1"
+  },
+  "resolutions": {
+    "devtools-protocol": "0.0.859327"
   }
 }
