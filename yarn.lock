@@ -2728,10 +2728,10 @@ detect-indent@^5.0.0:
   resolved "https://registry.yarnpkg.com/detect-indent/-/detect-indent-5.0.0.tgz#3871cc0a6a002e8c3e5b3cf7f336264675f06b9d"
   integrity sha1-OHHMCmoALow+Wzz38zYmRnXwa50=
 
-devtools-protocol@0.0.837676:
-  version "0.0.837676"
-  resolved "https://registry.yarnpkg.com/devtools-protocol/-/devtools-protocol-0.0.837676.tgz#87ab78ef47afea4708af9c1af11806e5e4bdf31e"
-  integrity sha512-gkaO5fqXFZfJTpsXVyqrEP5Kz+UXrMxEPjSpYrJS+rUOzw2P6B7AFX4j8pzWAscRUFnYHtyP8CO1WxEe1nrTPg==
+devtools-protocol@0.0.859327:
+  version "0.0.859327"
+  resolved "https://registry.yarnpkg.com/devtools-protocol/-/devtools-protocol-0.0.859327.tgz#4ea4a9cfc8a4ba492f3ba57b4109d2c5fe99474a"
+  integrity sha512-vRlLFY8Y2p3UnuDPRF0tsjHgXFM9JTS8T/p2F2YB9ukfpV+HByJU4kJc/Ks2/PozQ2bIQqmcYhDrSaFvs1Cy8Q==
 
 dezalgo@^1.0.0:
   version "1.0.3"
@@ -7595,6 +7595,11 @@ type-fest@^1.0.1, type-fest@^1.2.1, type-fest@^1.2.2:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-1.4.0.tgz#e9fb813fe3bf1744ec359d55d1affefa76f14be1"
   integrity sha512-yGSza74xk0UG8k+pLh5oeoYirvIiWo5t0/o3zHHAO2tRDiZcxWP7fywNlXhqb6/r6sWvwi+RsyQMWhVLe4BVuA==
+
+typed-query-selector@2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/typed-query-selector/-/typed-query-selector-2.6.1.tgz#73b6f591974129669df59d90f0bec4216e68a434"
+  integrity sha512-nzzcDrI0nncM5XTNyqeG7MrcXTx8lelUtNlTP+NvpnOfRzApyr+ZW4H/FoOaPfzmjn++Tf0ZxXpBN7Q3FN3ERw==
 
 typedarray-to-buffer@^3.1.5:
   version "3.1.5"
