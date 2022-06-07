@@ -6,8 +6,8 @@
  * specific language governing permissions and limitations under the License.
  */
 
+import Config from 'lighthouse/types/config';
 const ReportScoring = require('lighthouse/lighthouse-core/scoring');
-
 const scoreAllCategories = ReportScoring.scoreAllCategories;
 
 ReportScoring.scoreAllCategories = function (configCategories, resultsByAuditId) {
@@ -24,7 +24,7 @@ function getMinScore(fieldPluginCategoryResult, resultsByAuditId) {
   return scores.length ? Math.min(...scores) : 0;
 }
 
-const plugin: LH.Config.Plugin = {
+const plugin: Config.Plugin = {
   audits: [
     { path: 'lighthouse-plugin-crux/lib/audits/cls-audit.js' },
     { path: 'lighthouse-plugin-crux/lib/audits/cls-origin-audit.js' },

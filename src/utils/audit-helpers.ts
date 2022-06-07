@@ -1,5 +1,5 @@
 import { round } from 'lodash';
-import { Audit } from 'lighthouse';
+import { Audit, Artifacts } from 'lighthouse';
 import {
   CrUXMetric,
   CrUXMetricHistogram,
@@ -15,8 +15,8 @@ import isNumber from 'lodash/isNumber';
 const requests = new Map();
 
 export const getLoadingExperience = async (
-  artifacts: LH.Artifacts,
-  context: LH.Audit.Context | any,
+  artifacts: Artifacts,
+  context: Audit.Context | any,
   isUrl = true,
 ): Promise<CrUXResponseApi> => {
   const cruxToken = context.settings.cruxToken || null;
@@ -71,7 +71,7 @@ export const isResultsInField = (le: {
   return !!le && Boolean(Object.values(le.metrics || {}).length);
 };
 
-function createDistributionsTable({ histogram }: { histogram: CrUXMetricHistogram[] }, metric): LH.Audit.Details.Table {
+function createDistributionsTable({ histogram }: { histogram: CrUXMetricHistogram[] }, metric): Audit.Details.Table {
   const headings = [
     { key: 'category', itemType: 'text', text: 'Category' },
     { key: 'distribution', itemType: 'text', text: 'Percent of traffic' },

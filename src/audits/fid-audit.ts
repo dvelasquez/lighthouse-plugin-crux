@@ -6,7 +6,7 @@ import {
   isResultsInField,
 } from '../utils/audit-helpers';
 
-import { Audit } from 'lighthouse';
+import { Audit, Artifacts } from 'lighthouse';
 
 module.exports = class FidAudit extends Audit {
   static get meta() {
@@ -19,7 +19,7 @@ module.exports = class FidAudit extends Audit {
     };
   }
 
-  static async audit(artifacts: LH.Artifacts, context: LH.Audit.Context) {
+  static async audit(artifacts: Artifacts, context: Audit.Context) {
     try {
       const cruxResponse = await getLoadingExperience(artifacts, context, true);
       if (!isResultsInField(cruxResponse.record)) return createNotApplicableResult(FidAudit.meta.title);

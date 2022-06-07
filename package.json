@@ -16,7 +16,7 @@
     "run:gather-run": "lighthouse https://github.com/GoogleChrome/lighthouse --plugins=lighthouse-plugin-crux --only-categories=lighthouse-plugin-crux --chrome-flags='--headless' --view"
   },
   "peerDependencies": {
-    "lighthouse": "^7.0.0"
+    "lighthouse": "^7.0.0 || ^9.0.0"
   },
   "devDependencies": {
     "@types/eslint": "8.4.1",
@@ -27,12 +27,12 @@
     "@typescript-eslint/parser": "4.33.0",
     "cpy-cli": "4.1.0",
     "cross-env": "7.0.3",
-    "devtools-protocol": "0.0.859327",
+    "devtools-protocol": "0.0.999451",
     "eslint": "8.14.0",
     "eslint-config-prettier": "7.1.0",
     "eslint-plugin-prettier": "3.4.1",
     "lerna": "3.22.1",
-    "lighthouse": "7.5.0",
+    "lighthouse": "9.6.1",
     "prettier": "2.5.1",
     "rimraf": "3.0.2",
     "tap": "14.11.0",
@@ -44,6 +44,7 @@
     "node-fetch": "^2.6.1"
   },
   "resolutions": {
-    "devtools-protocol": "0.0.859327"
+    "puppeteer/**/devtools-protocol": "0.0.999451",
+    "puppeteer-core/**/devtools-protocol": "0.0.999451"
   }
 }
