@@ -6834,10 +6834,10 @@ type-fest@^1.0.1, type-fest@^1.2.1, type-fest@^1.2.2:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-1.4.0.tgz#e9fb813fe3bf1744ec359d55d1affefa76f14be1"
   integrity sha512-yGSza74xk0UG8k+pLh5oeoYirvIiWo5t0/o3zHHAO2tRDiZcxWP7fywNlXhqb6/r6sWvwi+RsyQMWhVLe4BVuA==
 
-typed-query-selector@2.6.1:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/typed-query-selector/-/typed-query-selector-2.6.1.tgz#73b6f591974129669df59d90f0bec4216e68a434"
-  integrity sha512-nzzcDrI0nncM5XTNyqeG7MrcXTx8lelUtNlTP+NvpnOfRzApyr+ZW4H/FoOaPfzmjn++Tf0ZxXpBN7Q3FN3ERw==
+typed-query-selector@2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/typed-query-selector/-/typed-query-selector-2.7.0.tgz#1fa86db6a80b5a245ab075a36b0c3230292f64cc"
+  integrity sha512-as41ht96B9wCJflTJtuNL8LueDlkhctp+p8Rn+WBkEZZ+Rakpycr7cQMbBsOND9iHY5/7pv6DVv/aojfQedDnQ==
 
 typedarray-to-buffer@^3.1.5:
   version "3.1.5"
