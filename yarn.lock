@@ -3015,10 +3015,10 @@ detect-indent@^6.0.0:
   resolved "https://registry.yarnpkg.com/detect-indent/-/detect-indent-6.1.0.tgz#592485ebbbf6b3b1ab2be175c8393d04ca0d57e6"
   integrity sha512-reYkTUJAZb9gUuZ2RvVCNhVHdg62RHnJ7WJl8ftMi4diZ6NWlciOzQN88pUhSELEwflJht4oQDv0F0BMlwaYtA==
 
-devtools-protocol@0.0.1075032:
-  version "0.0.1075032"
-  resolved "https://registry.yarnpkg.com/devtools-protocol/-/devtools-protocol-0.0.1075032.tgz#4bbe8489177bee0af81f99d5f4fd60b91f971b53"
-  integrity sha512-Np2EaEFlSOev03f5ySurGi3/z8YWOwsfSPPSDTbf7zlBY77SxBWfkFf41IUmkvfkeckX8XVW9hes1jVwALNAaA==
+devtools-protocol@0.0.1075693:
+  version "0.0.1075693"
+  resolved "https://registry.yarnpkg.com/devtools-protocol/-/devtools-protocol-0.0.1075693.tgz#f238259ee1984363a38ee8c7c5d98d0881e774ad"
+  integrity sha512-X/MxMOLpVH5AntCqcX1K0BXvxYT9vFA93SFX5HYrZvtVPUorE8qt0Cffn1YNHADKcfzAqCaK2uP4Y1CXq/QFOQ==
 
 devtools-protocol@0.0.981744:
   version "0.0.981744"
