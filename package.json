@@ -27,7 +27,7 @@
     "@typescript-eslint/parser": "5.51.0",
     "cpy-cli": "4.2.0",
     "cross-env": "7.0.3",
-    "devtools-protocol": "0.0.1103117",
+    "devtools-protocol": "0.0.1103684",
     "eslint": "8.33.0",
     "eslint-config-prettier": "8.6.0",
     "eslint-plugin-prettier": "4.2.1",
@@ -44,7 +44,7 @@
     "node-fetch": "^3.0.0"
   },
   "resolutions": {
-    "puppeteer/**/devtools-protocol": "0.0.1103117",
-    "puppeteer-core/**/devtools-protocol": "0.0.1103117"
+    "puppeteer/**/devtools-protocol": "0.0.1103684",
+    "puppeteer-core/**/devtools-protocol": "0.0.1103684"
   }
 }
