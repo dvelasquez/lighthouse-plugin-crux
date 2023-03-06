@@ -29,7 +29,7 @@
     "cross-env": "7.0.3",
     "devtools-protocol": "0.0.1113120",
     "eslint": "8.35.0",
-    "eslint-config-prettier": "8.6.0",
+    "eslint-config-prettier": "8.7.0",
     "eslint-plugin-prettier": "4.2.1",
     "lerna": "6.5.1",
     "lighthouse": "10.0.2",
