@@ -2346,10 +2346,10 @@ devtools-protocol@0.0.1082910:
   resolved "https://registry.yarnpkg.com/devtools-protocol/-/devtools-protocol-0.0.1082910.tgz#d79490dc66ef23eb17a24423c9ce5ce661714a91"
   integrity sha512-RqoZ2GmqaNxyx+99L/RemY5CkwG9D0WEfOKxekwCRXOGrDCep62ngezEJUVMq6rISYQ+085fJnWDQqGHlxVNww==
 
-devtools-protocol@0.0.1119769:
-  version "0.0.1119769"
-  resolved "https://registry.yarnpkg.com/devtools-protocol/-/devtools-protocol-0.0.1119769.tgz#f1c272c26f3df066e884941c6a5cea23c10af6d8"
-  integrity sha512-uKbX2n/O5rgr+QbH77LkTGIYnkaTB8ExtLKqoaeUtGi8wYR2erAvozM6/BKpROH8pLo5nwT+VsqqZd0ptlCV6w==
+devtools-protocol@0.0.1120367:
+  version "0.0.1120367"
+  resolved "https://registry.yarnpkg.com/devtools-protocol/-/devtools-protocol-0.0.1120367.tgz#24790d4c31db919315a59d97116e80f75a68cfd9"
+  integrity sha512-k3S11u8eeaDDc6M2N+kGz0jAgXStSAV7rrDf14crutgA/32Q2yNXtlfEbs8j+Y7B8+PXFb4fkTH0PoDM0C8pjg==
 
 dezalgo@^1.0.0:
   version "1.0.3"
