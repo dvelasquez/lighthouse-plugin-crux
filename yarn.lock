@@ -3477,10 +3477,10 @@ http-cache-semantics@^4.1.1:
   resolved "https://registry.yarnpkg.com/http-cache-semantics/-/http-cache-semantics-4.1.1.tgz#abe02fcb2985460bf0323be664436ec3476a6d5a"
   integrity sha512-er295DKPVsV82j5kw1Gjt+ADA/XYHsajl82cGNQG2eyoPkvgUhX+nDIyelzhIWbbsXP39EHcI6l5tYs2FYqYXQ==
 
-http-link-header@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/http-link-header/-/http-link-header-1.1.0.tgz#a1ca87efdbcb7778d8d0d4525de1e6964ec1f129"
-  integrity sha512-pj6N1yxOz/ANO8HHsWGg/OoIL1kmRYvQnXQ7PIRpgp+15AnEsRH8fmIJE6D1OdWG2Bov+BJHVla1fFXxg1JbbA==
+http-link-header@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/http-link-header/-/http-link-header-1.1.1.tgz#f0e6971b0ed86e858d2077066ecb7ba4f2e50de9"
+  integrity sha512-mW3N/rTYpCn99s1do0zx6nzFZSwLH9HGfUM4ZqLWJ16ylmYaC2v5eYGqrNTQlByx8AzUgGI+V/32gXPugs1+Sw==
 
 http-proxy-agent@^5.0.0:
   version "5.0.0"
@@ -4242,18 +4242,19 @@ lighthouse-stack-packs@1.9.1:
   resolved "https://registry.yarnpkg.com/lighthouse-stack-packs/-/lighthouse-stack-packs-1.9.1.tgz#e83f76e302cb3dec717ad6a3af2da07c91d8f8f5"
   integrity sha512-9prq6oMkVHz3GeCkphq4FHXXdj3M/WPiFWUvJAczLYV8j/oTxsgiHSPMqh1KVV11CP0VTxD40hFC0pDfXF+khQ==
 
-lighthouse@10.1.0:
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/lighthouse/-/lighthouse-10.1.0.tgz#32018eb76c1feff1bafe8c102369c81a3703030b"
-  integrity sha512-lIBgCcKK9bdPg95lMA+9RW9f8JZPRewVruloBxxSuu+90Ln422S8dpxC70KhvojdaeqeOLT9zJazZYgG+k1s3g==
+lighthouse@10.1.1:
+  version "10.1.1"
+  resolved "https://registry.yarnpkg.com/lighthouse/-/lighthouse-10.1.1.tgz#b59820ea83d78d95810a6aef0790df9eb407dfba"
+  integrity sha512-fw+IErhG3MB3SS8SWDcz+RMzM7n6/CPBShdQUTnc39U4V1yDVr+qBRtlXBhbpH5SFASzJnD6Xkm5SoYyCACHMg==
   dependencies:
     "@sentry/node" "^6.17.4"
     axe-core "4.6.3"
     chrome-launcher "^0.15.1"
     configstore "^5.0.1"
     csp_evaluator "1.1.1"
+    devtools-protocol "0.0.1130274"
     enquirer "^2.3.6"
-    http-link-header "^1.1.0"
+    http-link-header "^1.1.1"
     intl-messageformat "^4.4.0"
     jpeg-js "^0.4.4"
     js-library-detector "^6.6.0"
