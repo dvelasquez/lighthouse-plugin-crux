@@ -19,7 +19,7 @@
     "lighthouse": "^7.0.0 || ^9.0.0 || ^10.0.0"
   },
   "devDependencies": {
-    "@types/eslint": "8.40.1",
+    "@types/eslint": "8.40.2",
     "@types/node-fetch": "2.6.4",
     "@types/prettier": "2.7.3",
     "@types/tap": "15.0.8",
