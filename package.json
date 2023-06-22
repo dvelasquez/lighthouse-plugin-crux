@@ -35,7 +35,7 @@
     "lighthouse": "10.3.0",
     "prettier": "2.8.8",
     "rimraf": "5.0.1",
-    "tap": "16.3.6",
+    "tap": "16.3.7",
     "ts-node": "10.9.1",
     "typed-query-selector": "2.11.0",
     "typescript": "5.1.3"
