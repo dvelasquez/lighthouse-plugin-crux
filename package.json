@@ -28,7 +28,7 @@
     "cpy-cli": "5.0.0",
     "cross-env": "7.0.3",
     "devtools-protocol": "0.0.1188167",
-    "eslint": "8.47.0",
+    "eslint": "8.48.0",
     "eslint-config-prettier": "9.0.0",
     "eslint-plugin-prettier": "5.0.0",
     "lerna": "7.1.5",
