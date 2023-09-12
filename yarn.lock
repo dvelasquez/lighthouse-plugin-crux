@@ -2525,10 +2525,10 @@ devtools-protocol@0.0.1155343:
   resolved "https://registry.yarnpkg.com/devtools-protocol/-/devtools-protocol-0.0.1155343.tgz#9e4ce46e9b05a1be6d6b629fbfaa1a38b1c18a3b"
   integrity sha512-oD9vGBV2wTc7fAzAM6KC0chSgs234V8+qDEeK+mcbRj2UvcuA7lgBztGi/opj/iahcXD3BSj8Ymvib628yy9FA==
 
-devtools-protocol@0.0.1193409:
-  version "0.0.1193409"
-  resolved "https://registry.yarnpkg.com/devtools-protocol/-/devtools-protocol-0.0.1193409.tgz#d28f770ba6f46d3aa8eae46777500a4858241dfc"
-  integrity sha512-74ZwtzCgR7YB2wCU67pHNv6VGvVka0120WPoOR7tXYr2VJRNxZX7y3OLjd37GXkyAQ5Qw3gVh/+ffWoeBRhkCQ==
+devtools-protocol@0.0.1195207:
+  version "0.0.1195207"
+  resolved "https://registry.yarnpkg.com/devtools-protocol/-/devtools-protocol-0.0.1195207.tgz#f2deeaafb8965c2d65c4056e5654bf5e4fb936c2"
+  integrity sha512-1DaFfdhg2Rh7yS118bkEiN8zQdCBdm6VywvhJszQ9B+qJRIMV3AiuR6fXdtHaPrhwzOZNtYMSqjy4nvnYDmvog==
 
 diff-sequences@^29.4.3:
   version "29.4.3"
