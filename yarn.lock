@@ -853,10 +853,10 @@
     "@tapjs/after" "1.0.2"
     "@tapjs/stack" "1.0.0"
 
-"@tapjs/mock@1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@tapjs/mock/-/mock-1.0.2.tgz#7757ceed64a34763bf4e0bffb16d6bcadaa6ff86"
-  integrity sha512-v/cE4L7625zxqZu0Rv6uDbMTCt7lrIxesCDbriU6I9ajDRUQqS+G6uE8F+5XSiBPMoLVl6W//6ju4jiw41AP0g==
+"@tapjs/mock@1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@tapjs/mock/-/mock-1.0.3.tgz#95591dcb8c8a4bd536e08f6744da8fa8f3e0e50d"
+  integrity sha512-TfFwmLzs/D9aJGtUSzs0VUQO9/bYdq3IEjAv526UxvqMKmRi0S1RX2MBObhD4XpfA/miAEcOBahLmKV04CFVfA==
   dependencies:
     "@tapjs/after" "1.0.2"
     "@tapjs/stack" "1.0.0"
@@ -889,10 +889,10 @@
     react "^18.2.0"
     string-length "^6.0.0"
 
-"@tapjs/run@1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@tapjs/run/-/run-1.0.2.tgz#93dcfcb4f8dd01f98043de4f19977ae8470476cd"
-  integrity sha512-iPuK7Sgb7vn8Bkg405Rk7nVaFT9ZVsohX/ZLwIBAPOYp9gf/A+r2oOT+u4H3HwDM+CJYz1nAtA6RiF52OId1YA==
+"@tapjs/run@1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@tapjs/run/-/run-1.0.3.tgz#af39d5ae8941b294d515338c5c88d78aa92de8fb"
+  integrity sha512-70Nwi5sJ9HxreIyhMVZT3Udf30pBQbmhCqMALnzPjtCB6QbJSgt7JI1iS4miPmTNAEOvs0qsKUZ7+ZtBDOcYXw==
   dependencies:
     "@tapjs/after" "1.0.2"
     "@tapjs/before" "1.0.2"
@@ -6460,10 +6460,10 @@ tap-yaml@2.1.1:
     yaml "^2.3.0"
     yaml-types "^0.3.0"
 
-tap@18.0.2:
-  version "18.0.2"
-  resolved "https://registry.yarnpkg.com/tap/-/tap-18.0.2.tgz#4df11656d36ba37fd457b7670fc3a9dce929b2b1"
-  integrity sha512-hvzH80Y60E7pEvZz4gMXOrUexVBAzI9oiCgZwqzdkLx/WD9xjz7KubbIkMAXzl0CamUl7QiWzJeGf7aUcbszyw==
+tap@18.0.3:
+  version "18.0.3"
+  resolved "https://registry.yarnpkg.com/tap/-/tap-18.0.3.tgz#99c969309edfc5557062fe098db8f69ad5e48785"
+  integrity sha512-WSadvUZZ2TjGWL+hQY8nl7Y96JoR1MTlZPrSYBdqB728ZRmhulhKLXIV5sidKS3nkTnKwzNRdu+wSAPm++NjeQ==
   dependencies:
     "@tapjs/after" "1.0.2"
     "@tapjs/after-each" "1.0.2"
@@ -6474,8 +6474,8 @@ tap@18.0.2:
     "@tapjs/filter" "1.0.2"
     "@tapjs/fixture" "1.0.2"
     "@tapjs/intercept" "1.0.2"
-    "@tapjs/mock" "1.0.2"
-    "@tapjs/run" "1.0.2"
+    "@tapjs/mock" "1.0.3"
+    "@tapjs/run" "1.0.3"
     "@tapjs/snapshot" "1.0.2"
     "@tapjs/spawn" "1.0.2"
     "@tapjs/stdin" "1.0.2"
