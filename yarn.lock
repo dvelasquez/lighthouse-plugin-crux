@@ -829,6 +829,13 @@
     tcompare "6.1.0"
     trivial-deferred "^2.0.0"
 
+"@tapjs/error-serdes@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@tapjs/error-serdes/-/error-serdes-1.0.0.tgz#d78d0de134285f7714c709862d109cde5ce3e7d0"
+  integrity sha512-c15fdXAD0Mj9YakHvqWHrDgyaOftjRfkhNNCTphN9kLtuI8MCAyLUzb+cXa7/ZiIk89knsnyJh+B+Gb/bdtYBQ==
+  dependencies:
+    minipass "^7.0.3"
+
 "@tapjs/filter@1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@tapjs/filter/-/filter-1.1.0.tgz#3c26e0aa1c62c9b292d2b04ab62335ff79b25dae"
@@ -845,10 +852,10 @@
     mkdirp "^3.0.0"
     rimraf "^5.0.0"
 
-"@tapjs/intercept@1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@tapjs/intercept/-/intercept-1.1.0.tgz#83da3a7c8bf6dcd1f7b427dc02de42caa1c805ab"
-  integrity sha512-5JGiWoDbe4EQnZaCcUupO31vmmgYHwb2Pmz4CbMA1PBJIqGrlOtVgq/PyvQfcUfCz3jiJ9cJ3v6PMfdZqDvsCw==
+"@tapjs/intercept@1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@tapjs/intercept/-/intercept-1.1.1.tgz#f7c687fcb453672507f5eb4b87aa15504a3388f6"
+  integrity sha512-GdeD4oIyN+1Y8xeQyveM1jrWXB6gGMptfmujM5YzLbacSZfotIrG/vpcxluuUZTumHNetDNr1FVFv3pDWg1sgA==
   dependencies:
     "@tapjs/after" "1.0.4"
     "@tapjs/stack" "1.1.0"
@@ -863,6 +870,13 @@
     resolve-import "^1.4.1"
     walk-up-path "^3.0.1"
 
+"@tapjs/node-serialize@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@tapjs/node-serialize/-/node-serialize-1.0.0.tgz#03af703b842405df7052f770fc30fe904058113a"
+  integrity sha512-PmJZI5xbcPFloqNOYQwW7YQF8FGrMYdK7FIDgBhXS6ke5RnKDEGed6lvjTDUoXAe+hVwCt2uJmrRMyD4WDl2Ww==
+  dependencies:
+    "@tapjs/error-serdes" "1.0.0"
+
 "@tapjs/processinfo@^3.1.1":
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/@tapjs/processinfo/-/processinfo-3.1.1.tgz#d32c1fd49d184d30d9b2e59e83915334dcc33a5c"
@@ -873,10 +887,10 @@
     signal-exit "^4.0.2"
     uuid "^8.3.2"
 
-"@tapjs/reporter@1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@tapjs/reporter/-/reporter-1.1.0.tgz#2f4c3e07db242afead94f6684b118bb3b68882bf"
-  integrity sha512-HGy7m2/eC9PnULS/854HMZgX4KizzG9CZOUKzq94DJwx3UsoEfAUn+Vlk7A2+TBz6rgqhVuAXtMIICIFhFIApg==
+"@tapjs/reporter@1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@tapjs/reporter/-/reporter-1.1.1.tgz#f245e89d265e59b7b8aca7e8ddb4e7b89fbca6fe"
+  integrity sha512-2gdWqZUh2yRVGNHM0+Z7v7aLXogyaYWFa4eiAz2VA2qGNQBCE3KebFTLH/8ATKXGkH90FDz+Z5lYdPQXacZFmA==
   dependencies:
     "@tapjs/config" "2.1.0"
     "@tapjs/test" "1.1.0"
@@ -890,16 +904,16 @@
     string-length "^6.0.0"
     tcompare "6.1.0"
 
-"@tapjs/run@1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@tapjs/run/-/run-1.1.0.tgz#c03573733cddf1c5accaa9db0ba48bba901ef866"
-  integrity sha512-LHi0PJwNt8wurq+2hc7xZN6lpCBPx+l3htP56SF9p6OLcRzLI7ZKm8tvvJJvzjAn4jcxHAohOlEUc5Z+tIMLUA==
+"@tapjs/run@1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@tapjs/run/-/run-1.1.1.tgz#dd35cde2e2efaae2bd4619bd008059917627e8da"
+  integrity sha512-Dl7/g/hELSzTA4146OlpDS4igsI72AfJE1JFJytD1z4sZaZiy1hCg7LG9i9x1aOWTveG8ox64ysYM9KkOxA9cA==
   dependencies:
     "@tapjs/after" "1.0.4"
     "@tapjs/before" "1.0.4"
     "@tapjs/config" "2.1.0"
     "@tapjs/processinfo" "^3.1.1"
-    "@tapjs/reporter" "1.1.0"
+    "@tapjs/reporter" "1.1.1"
     "@tapjs/spawn" "1.0.4"
     "@tapjs/stdin" "1.0.4"
     "@tapjs/test" "1.1.0"
@@ -6473,10 +6487,10 @@ tap-yaml@2.1.1:
     yaml "^2.3.0"
     yaml-types "^0.3.0"
 
-tap@18.1.0:
-  version "18.1.0"
-  resolved "https://registry.yarnpkg.com/tap/-/tap-18.1.0.tgz#ddf0d6cc6cc42dccc59c7c673dca3295a3868309"
-  integrity sha512-fLbKY9O1Lx4RU+5KmBHDkL4+csWjSncKgCauyA0DvZRqvruOPSARZkentrMnAlWNAYEs01clbQMf7+QLKNMsag==
+tap@18.1.1:
+  version "18.1.1"
+  resolved "https://registry.yarnpkg.com/tap/-/tap-18.1.1.tgz#1142054d90b274380989a2112953cb9f033c9a74"
+  integrity sha512-NB6DSyuGCXzfQmLjUmV82msqfmJCnoAbYY7zxnnRoAAJedSYingIEJQBTmBZmv4HpNH00AN+ZXYNwP+MXSq8bg==
   dependencies:
     "@tapjs/after" "1.0.4"
     "@tapjs/after-each" "1.0.4"
@@ -6486,9 +6500,10 @@ tap@18.1.0:
     "@tapjs/core" "1.1.0"
     "@tapjs/filter" "1.1.0"
     "@tapjs/fixture" "1.0.4"
-    "@tapjs/intercept" "1.1.0"
+    "@tapjs/intercept" "1.1.1"
     "@tapjs/mock" "1.0.5"
-    "@tapjs/run" "1.1.0"
+    "@tapjs/node-serialize" "1.0.0"
+    "@tapjs/run" "1.1.1"
     "@tapjs/snapshot" "1.0.4"
     "@tapjs/spawn" "1.0.4"
     "@tapjs/stdin" "1.0.4"
