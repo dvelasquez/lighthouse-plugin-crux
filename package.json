@@ -30,7 +30,7 @@
     "devtools-protocol": "0.0.1208070",
     "eslint": "8.51.0",
     "eslint-config-prettier": "9.0.0",
-    "eslint-plugin-prettier": "5.0.0",
+    "eslint-plugin-prettier": "5.0.1",
     "lerna": "7.3.0",
     "lighthouse": "10.4.0",
     "prettier": "3.0.3",
