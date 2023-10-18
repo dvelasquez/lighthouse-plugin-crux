@@ -22,7 +22,7 @@
     "@types/eslint": "8.44.6",
     "@types/node-fetch": "2.6.7",
     "@types/prettier": "2.7.3",
-    "@types/tap": "15.0.9",
+    "@types/tap": "15.0.10",
     "@typescript-eslint/eslint-plugin": "6.8.0",
     "@typescript-eslint/parser": "6.8.0",
     "cpy-cli": "5.0.0",
