@@ -932,10 +932,10 @@
     tap-yaml "2.2.1"
     tcompare "6.4.4"
 
-"@tapjs/run@1.4.13":
-  version "1.4.13"
-  resolved "https://registry.yarnpkg.com/@tapjs/run/-/run-1.4.13.tgz#45e617f65713ed08707d53dbb934f390c4854627"
-  integrity sha512-EIXLrALGsuBcPdnPKEpeIu22svRunO77BF39HxItX39/YvE74s4PiwrcO9Gv8q/l8GdT4KtsCrrbjpLA/oS3AQ==
+"@tapjs/run@1.4.14":
+  version "1.4.14"
+  resolved "https://registry.yarnpkg.com/@tapjs/run/-/run-1.4.14.tgz#6c3f885cd67f4851cfa17ff3b0e25d8a12bdc80b"
+  integrity sha512-jkOMWlxAUTjPtJqLWHVAbH4hkaj/oAf6W20rA+gRhxZQ7VtAgEgVavV3lSaNM3gPmgZwiJZezX+hHO3nDkCfrg==
   dependencies:
     "@tapjs/after" "1.1.16"
     "@tapjs/before" "1.1.16"
@@ -6573,10 +6573,10 @@ tap-yaml@2.2.1:
     yaml "^2.3.0"
     yaml-types "^0.3.0"
 
-tap@18.5.6:
-  version "18.5.6"
-  resolved "https://registry.yarnpkg.com/tap/-/tap-18.5.6.tgz#9fedc479767bc1309bc9ae3ffa60ce9f0e461f12"
-  integrity sha512-8g1hb//MXTUgEpkXI5gQlqgfX42dQH9PKs0lkpQOUOZ2sSQva/RNmvxgxAULp2KvIdkyEt5+75e1PBhIj4Xu1w==
+tap@18.5.7:
+  version "18.5.7"
+  resolved "https://registry.yarnpkg.com/tap/-/tap-18.5.7.tgz#a145e8a8cc380912466ea43017a35297dd014564"
+  integrity sha512-H2QstHSCmEQAriaPZw5j5DzfASpf15fPVn3a2Vc2TxJ0sahTJo5L7KIihInO6MsrEwGHpQU53u1lB7u8F6QZwg==
   dependencies:
     "@tapjs/after" "1.1.16"
     "@tapjs/after-each" "1.1.16"
@@ -6589,7 +6589,7 @@ tap@18.5.6:
     "@tapjs/intercept" "1.2.16"
     "@tapjs/mock" "1.2.14"
     "@tapjs/node-serialize" "1.2.5"
-    "@tapjs/run" "1.4.13"
+    "@tapjs/run" "1.4.14"
     "@tapjs/snapshot" "1.2.16"
     "@tapjs/spawn" "1.1.16"
     "@tapjs/stdin" "1.1.16"
