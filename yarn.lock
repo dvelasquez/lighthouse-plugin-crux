@@ -1158,10 +1158,10 @@
   resolved "https://registry.yarnpkg.com/@types/semver/-/semver-7.5.0.tgz#591c1ce3a702c45ee15f47a42ade72c2fd78978a"
   integrity sha512-G8hZ6XJiHnuhQKR7ZmysCeJWE08o8T0AXtk5darsCaTVsYZhhgUrq53jizaR2FvsoeCwJhlmwTjkXBY5Pn/ZHw==
 
-"@types/tap@15.0.10":
-  version "15.0.10"
-  resolved "https://registry.yarnpkg.com/@types/tap/-/tap-15.0.10.tgz#896fe1c57af393f62e40328fb7b3911cc115cfb9"
-  integrity sha512-NcsQN3XkZ+xuhaUJjkfpQfJLpyLz/2+wlFKZ1bRK5B5Pe37ccotzkDo66jWjjwmARD5slzLC/KtSt7+gomvLSQ==
+"@types/tap@15.0.11":
+  version "15.0.11"
+  resolved "https://registry.yarnpkg.com/@types/tap/-/tap-15.0.11.tgz#58d3334ed2b2640e576dc6d39f80f5d014dc2917"
+  integrity sha512-QzbxIsrK6yX3iWC2PXGX/Ljz5cGISDEuOGISMcckeSUKIJXzbsfJLF4LddoncZ+ELVZpO0X87KfRem4h+yBFXQ==
   dependencies:
     "@types/node" "*"
 
