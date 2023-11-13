@@ -33,7 +33,7 @@
     "eslint-plugin-prettier": "5.0.1",
     "lerna": "7.4.2",
     "lighthouse": "10.4.0",
-    "prettier": "3.0.3",
+    "prettier": "3.1.0",
     "rimraf": "5.0.5",
     "tap": "18.5.7",
     "ts-node": "10.9.1",
