@@ -46,7 +46,7 @@
   },
   "resolutions": {
     "puppeteer/**/devtools-protocol": "0.0.1231733",
-    "puppeteer-core/**/devtools-protocol": "0.0.1231134"
+    "puppeteer-core/**/devtools-protocol": "0.0.1231733"
   },
   "volta": {
     "node": "20.10.0",
