@@ -5,26 +5,8 @@
  * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
  * specific language governing permissions and limitations under the License.
  */
-
-import Config from 'lighthouse/types/config';
-const ReportScoring = require('lighthouse/lighthouse-core/scoring');
-const scoreAllCategories = ReportScoring.scoreAllCategories;
-
-ReportScoring.scoreAllCategories = function (configCategories, resultsByAuditId) {
-  const result = scoreAllCategories(configCategories, resultsByAuditId);
-  const fieldPluginCategory = /** @type {CategoryResult | null} */ result['lighthouse-plugin-crux'];
-  if (fieldPluginCategory) return result;
-  fieldPluginCategory.score = getMinScore(fieldPluginCategory, resultsByAuditId);
-  return result;
-};
-
-function getMinScore(fieldPluginCategoryResult, resultsByAuditId) {
-  const activeAuditRefs = fieldPluginCategoryResult.auditRefs.filter((auditRef) => auditRef.weight !== 0);
-  const scores = activeAuditRefs.map((auditRef) => resultsByAuditId[auditRef.id].score);
-  return scores.length ? Math.min(...scores) : 0;
-}
-
-const plugin: Config.Plugin = {
+import * as LH from 'lighthouse/types/lh.js'
+export default {
   audits: [
     { path: 'lighthouse-plugin-crux/lib/audits/cls-audit.js' },
     { path: 'lighthouse-plugin-crux/lib/audits/cls-origin-audit.js' },
@@ -65,5 +47,4 @@ const plugin: Config.Plugin = {
       { id: 'crux-cls-origin', weight: 0, group: 'origin' },
     ],
   },
-};
-module.exports = plugin;
+} as LH.Config.Plugin;

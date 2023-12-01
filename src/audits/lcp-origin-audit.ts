@@ -1,25 +1,25 @@
 import { Audit, Artifacts } from 'lighthouse';
-
+import * as LH from 'lighthouse/types/lh.js';
 import {
   createErrorResult,
   createNotApplicableResult,
   createValueResult,
   getLoadingExperience,
   isResultsInField,
-} from '../utils/audit-helpers';
+} from '../utils/audit-helpers.js';
 
-module.exports = class LcpOriginAudit extends Audit {
+export default class LcpOriginAudit extends Audit {
   static get meta() {
     return {
       id: 'crux-lcp-origin',
       title: 'Largest Contentful Paint (Origin)',
       description: `Largest Contentful Paint (LCP) marks the time in the page load timeline when the page's main content has likely loaded. The value is 75th percentile of the origin traffic. [Learn more about LCP](https://web.dev/lcp/)`,
-      scoreDisplayMode: 'numeric',
-      requiredArtifacts: ['URL', 'settings'],
+      scoreDisplayMode: 'numeric' as LH.Audit.ScoreDisplayMode,
+      requiredArtifacts: ['URL', 'settings'] as LH.Audit.Meta['requiredArtifacts'],
     };
   }
 
-  static async audit(artifacts: Artifacts, context: Audit.Context) {
+  static async audit(artifacts: Artifacts, context: LH.Audit.Context) {
     try {
       const cruxResponse = await getLoadingExperience(artifacts, context, false);
       if (!isResultsInField(cruxResponse.record)) return createNotApplicableResult(LcpOriginAudit.meta.title);
