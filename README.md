@@ -31,7 +31,7 @@ Sometimes field data is missing because a URL doesn't have enough anonymous traf
 
 ## Install
 
-Requires Node.js `12+` and Lighthouse `7+`.
+Requires Node.js `20+` and Lighthouse `10+`.
 
 ```bash
 $ npm install lighthouse lighthouse-plugin-crux
@@ -60,7 +60,7 @@ $ npx lighthouse https://www.apple.com/ --config-path=./config.js
 `config.js`
 
 ```js
-module.exports = {
+export default {
   extends: 'lighthouse:default',
   plugins: ['lighthouse-plugin-crux'],
   settings: {
