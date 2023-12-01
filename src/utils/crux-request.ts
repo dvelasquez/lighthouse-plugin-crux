@@ -1,4 +1,3 @@
-import fetch from 'node-fetch';
 const CRUX_API_TOKEN = process.env.CRUX_API_TOKEN || '';
 const apiUrl = 'https://content-chromeuxreport.googleapis.com/v1/records:queryRecord?alt=json&key=';
 
@@ -55,7 +54,9 @@ export async function cruxRequest(
     if (cruxToken || CRUX_API_TOKEN) {
       cruxToken = cruxToken || CRUX_API_TOKEN;
       const response = await fetch(apiUrl + cruxToken, { method: 'POST', body: JSON.stringify(opts) });
-      return await response.json();
+      return await response.json() as CrUXResponseApi;
+    } else {
+      throw new Error('No CrUX API token provided');
     }
   } catch (error) {
     console.error(error);

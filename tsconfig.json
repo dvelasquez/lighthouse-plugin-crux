@@ -1,17 +1,17 @@
 {
   "ts-node": {
     "compilerOptions": {
-      "module": "UMD"
+      "module": "esnext"
     }
   },
   "compilerOptions": {
     "types": ["node"],
-    "target": "ES2019",
+    "target": "esnext",
     "declaration": true,
     "declarationMap": true,
     "outDir": "./lib",
-    "module": "CommonJS",
-    "moduleResolution": "Node",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "esModuleInterop": true
   },
   "include": ["src/**/*"],

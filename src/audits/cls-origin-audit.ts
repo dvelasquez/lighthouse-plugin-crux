@@ -1,25 +1,25 @@
 import { Audit, Artifacts } from 'lighthouse';
+import * as LH from 'lighthouse/types/lh.js';
 import {
   createErrorResult,
   createNotApplicableResult,
   createValueResult,
   getLoadingExperience,
   isResultsInField,
-} from '../utils/audit-helpers';
-
-module.exports = class CLSOriginAudit extends Audit {
+} from '../utils/audit-helpers.js';
+export default class CLSOriginAudit extends Audit {
   static get meta() {
     return {
       id: 'crux-cls-origin',
       title: 'Cumulative Layout Shift (Origin)',
       description:
         'Cumulative Layout Shift (CLS) measures visual stability, and it helps quantify how often users experience unexpected layout shifts. The value is 75th percentile of the origin traffic. [Learn more about CLS](https://web.dev/cls/)',
-      scoreDisplayMode: 'numeric',
-      requiredArtifacts: ['URL', 'settings'],
+      scoreDisplayMode: 'numeric' as LH.Audit.ScoreDisplayMode,
+      requiredArtifacts: ['URL', 'settings'] as LH.Audit.Meta['requiredArtifacts'],
     };
   }
 
-  static async audit(artifacts: Artifacts, context: Audit.Context) {
+  static async audit(artifacts: Artifacts, context: LH.Audit.Context) {
     try {
       const cruxResponse = await getLoadingExperience(artifacts, context, false);
       if (!isResultsInField(cruxResponse.record)) return createNotApplicableResult(CLSOriginAudit.meta.title);

@@ -1,5 +1,6 @@
-import { round } from 'lodash';
+import { round, isNumber } from 'lodash-es';
 import { Audit, Artifacts } from 'lighthouse';
+import * as LH from 'lighthouse/types/lh.js';
 import {
   CrUXMetric,
   CrUXMetricHistogram,
@@ -9,20 +10,19 @@ import {
   CrUXResponseApi,
   FormFactor,
   MetricsOptions,
-} from './crux-request';
-import isNumber from 'lodash/isNumber';
+} from './crux-request.js';
 
 const requests = new Map();
 
 export const getLoadingExperience = async (
-  artifacts: Artifacts,
-  context: Audit.Context | any,
+  artifacts: LH.Artifacts,
+  context: LH.Audit.Context | any,
   isUrl = true,
 ): Promise<CrUXResponseApi> => {
   const cruxToken = context.settings.cruxToken || null;
   const formFactor: FormFactor = artifacts.settings.formFactor === 'desktop' ? 'DESKTOP' : 'PHONE';
   const prefix = isUrl ? 'url' : 'origin';
-  const { href, origin } = new URL(artifacts.URL.finalUrl);
+  const { href, origin } = new URL(artifacts.URL.finalDisplayedUrl);
   const url = `${prefix}:${href}`;
   const key = url + formFactor;
   if (!requests.has(key)) {
@@ -34,8 +34,8 @@ export const getLoadingExperience = async (
   return requests.get(key);
 };
 
-export const createValueResult = (metricValue: any, metric: string) => {
-  const numericValue = normalizeMetricValue(metric, metricValue.percentiles.p75);
+export const createValueResult = (metricValue: any, metric: string): LH.Audit.Product => {
+  const numericValue: number = normalizeMetricValue(metric, metricValue.percentiles.p75);
   return {
     numericValue,
     score: Audit.computeLogNormalScore(getMetricRange(metric), numericValue),
@@ -71,10 +71,10 @@ export const isResultsInField = (le: {
   return !!le && Boolean(Object.values(le.metrics || {}).length);
 };
 
-function createDistributionsTable({ histogram }: { histogram: CrUXMetricHistogram[] }, metric): Audit.Details.Table {
-  const headings = [
-    { key: 'category', itemType: 'text', text: 'Category' },
-    { key: 'distribution', itemType: 'text', text: 'Percent of traffic' },
+function createDistributionsTable({ histogram }: { histogram: CrUXMetricHistogram[] }, metric): LH.Audit.Details.Table {
+  const headings: LH.Audit.Details.TableColumnHeading[] = [
+    { key: 'category', valueType: 'text', label: 'Category' },
+    { key: 'distribution', valueType: 'text', label: 'Percent of traffic' },
   ];
   const items = histogram.map(({ start, end, density }, index) => {
     const item: any = {};
@@ -151,6 +151,6 @@ function normalizeMetricValue(metric: string, value: number | string | undefined
   }
 }
 
-function getMetricNumericUnit(metric: string): string {
+function getMetricNumericUnit(metric: string): 'unitless' | 'millisecond' {
   return metric === 'cls' ? 'unitless' : 'millisecond';
 }
