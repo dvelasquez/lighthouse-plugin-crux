@@ -957,10 +957,10 @@ devtools-protocol@0.0.1211954:
   resolved "https://registry.yarnpkg.com/devtools-protocol/-/devtools-protocol-0.0.1211954.tgz#86ea77d011baab619fb096fc426fd8633ad2ef9b"
   integrity sha512-f6BRhngr9wpHN8omZOoSaEJFscTL+tjNhmeBqHHC3CZ3K2N75sDeKXZeTkAEkTCcrusDatfwjRRBh0uz4ov/sA==
 
-devtools-protocol@0.0.1233178:
-  version "0.0.1233178"
-  resolved "https://registry.yarnpkg.com/devtools-protocol/-/devtools-protocol-0.0.1233178.tgz#dfc83cdc487c0cae8f059047293be9d6267a19f9"
-  integrity sha512-jmMfyaqlzddwmDaSR1AQ+5ek+f7rupZdxKuPdkRcoxrZoF70Idg/4dTgXA08TLPmwAwB54gh49Wm2l/gRM0eUg==
+devtools-protocol@0.0.1233758:
+  version "0.0.1233758"
+  resolved "https://registry.yarnpkg.com/devtools-protocol/-/devtools-protocol-0.0.1233758.tgz#41544cc044e4139dad4b0951b81b1989e73a84b4"
+  integrity sha512-+n6zJyR9U4Zq5LDC348xxnDTHb0wAoqex+580paAHgP3vD0RUddTB5vKOaVe8zbB6wN9PnkqWYru1LSoiM28xQ==
 
 diff@^4.0.1:
   version "4.0.2"
