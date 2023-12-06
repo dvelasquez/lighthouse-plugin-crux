@@ -36,7 +36,7 @@
     "rimraf": "5.0.5",
     "ts-node": "10.9.1",
     "typed-query-selector": "2.11.0",
-    "typescript": "5.3.2"
+    "typescript": "5.3.3"
   },
   "dependencies": {
     "lodash-es": "4.17.21"
