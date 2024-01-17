@@ -7,7 +7,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: volta-cli/action@v4
       - name: Cache yarn cache using cache-action
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ~/.cache/yarn
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
