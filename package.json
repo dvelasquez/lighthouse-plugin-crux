@@ -20,7 +20,7 @@
     "lighthouse": "^10.0.0 || ^11.0.0"
   },
   "devDependencies": {
-    "@types/eslint": "8.56.2",
+    "@types/eslint": "8.56.3",
     "@types/prettier": "2.7.3",
     "@types/tap": "15.0.11",
     "@typescript-eslint/eslint-plugin": "7.0.2",
