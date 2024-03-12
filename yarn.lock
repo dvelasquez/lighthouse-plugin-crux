@@ -2906,10 +2906,10 @@ type-fest@^3.1.0, type-fest@^3.9.0:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-3.12.0.tgz#4ce26edc1ccc59fc171e495887ef391fe1f5280e"
   integrity sha512-qj9wWsnFvVEMUDbESiilKeXeHL7FwwiFcogfhfyjmvT968RXSvnl23f1JOClTHYItsi7o501C/7qVllscUP3oA==
 
-typed-query-selector@2.11.0:
-  version "2.11.0"
-  resolved "https://registry.yarnpkg.com/typed-query-selector/-/typed-query-selector-2.11.0.tgz#f9a4f4c9bd3a3564a20d13c9d64eab77c3780d0c"
-  integrity sha512-qBs4sfmnLlPOyo2oSdvHbIFHe2CPgU54/1UGfSNceb7LARpIEVxUaeRX0Doje6oKpuySS2stqy90R3YrynR8Kg==
+typed-query-selector@2.11.1:
+  version "2.11.1"
+  resolved "https://registry.yarnpkg.com/typed-query-selector/-/typed-query-selector-2.11.1.tgz#56e7ae447e5ea6edf448d51d64b842cbc2275418"
+  integrity sha512-/ETnbg+mXwdtSc8FmotqzGJsFn1frnREGNi9ki/Gd9MFDyUbSu2i0WvU+29Wfspd+9awvk6DQbcWwZAASghl8g==
 
 typedarray-to-buffer@^3.1.5:
   version "3.1.5"
