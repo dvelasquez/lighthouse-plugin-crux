@@ -209,10 +209,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@paulirish/trace_engine@^0.0.12":
-  version "0.0.12"
-  resolved "https://registry.yarnpkg.com/@paulirish/trace_engine/-/trace_engine-0.0.12.tgz#6172c84f19d1e4254450d1927b1bb3eea5b5ba04"
-  integrity sha512-PglukOOYGvjqgMVKNSa3a4grWrWzL97L47bgDCzqAnDSTJ+vDOKxMPXR3rsnLECoZzpbb9LCzS3CEg/NwwhRHQ==
+"@paulirish/trace_engine@^0.0.19":
+  version "0.0.19"
+  resolved "https://registry.yarnpkg.com/@paulirish/trace_engine/-/trace_engine-0.0.19.tgz#794642d6b4947fc2a4b5724a57e3af61606029e2"
+  integrity sha512-3tjEzXBBtU83DkCJAdU2UwBBunspiwTCn+Y5jOxm592cfEuLr/T7Lcn+QhRerVqkSik2mnjN4X6NgHZjI9Biwg==
 
 "@pkgjs/parseargs@^0.11.0":
   version "0.11.0"
@@ -599,10 +599,10 @@ ast-types@^0.13.4:
   dependencies:
     tslib "^2.0.1"
 
-axe-core@^4.8.4:
-  version "4.8.4"
-  resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.8.4.tgz#90db39a2b316f963f00196434d964e6e23648643"
-  integrity sha512-CZLSKisu/bhJ2awW4kJndluz2HLZYIHh5Uy1+ZwDRkJi69811xgIXXfdU9HSLX0Th+ILrHj8qfL/5wzamsFtQg==
+axe-core@^4.9.0:
+  version "4.9.0"
+  resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.9.0.tgz#b18971494551ab39d4ff5f7d4c6411bd20cc7c2a"
+  integrity sha512-H5orY+M2Fr56DWmMFpMrq5Ge93qjNdPVqzBv5gWK3aD1OvjBEJlEzxf09z93dGVQeI0LiW+aCMIx1QtShC/zUw==
 
 b4a@^1.6.4:
   version "1.6.4"
@@ -1816,14 +1816,14 @@ lighthouse-stack-packs@1.12.1:
   resolved "https://registry.yarnpkg.com/lighthouse-stack-packs/-/lighthouse-stack-packs-1.12.1.tgz#1dbebf795d50e6a96454ece7754bd4aa5be546ae"
   integrity sha512-i4jTmg7tvZQFwNFiwB+nCK6a7ICR68Xcwo+VIVd6Spi71vBNFUlds5HiDrSbClZdkQDON2Bhqv+KKJIo5zkPeA==
 
-lighthouse@11.7.0:
-  version "11.7.0"
-  resolved "https://registry.yarnpkg.com/lighthouse/-/lighthouse-11.7.0.tgz#fb199f937ffa364d2f9ee5aed48d2891c35ce383"
-  integrity sha512-oQ9fJyNGibt00Q+046ROZXNcMUwFSEcgsJljww3xLtMkWpq5dnmw7zw39CJFGhXcpAA8D6ayiFuWo7uDXjld/g==
+lighthouse@11.7.1:
+  version "11.7.1"
+  resolved "https://registry.yarnpkg.com/lighthouse/-/lighthouse-11.7.1.tgz#468ec7e3114ff319ae67a7f298fa20744a3627b6"
+  integrity sha512-QuvkZvobZ8Gjv2Jkxl6TKhV5JYBzU+lzpqTY+Y1iH5IUc1SMYK4IOpBnSpp6PkM2FbNyur9uoNutPhsuLLqGTg==
   dependencies:
-    "@paulirish/trace_engine" "^0.0.12"
+    "@paulirish/trace_engine" "^0.0.19"
     "@sentry/node" "^6.17.4"
-    axe-core "^4.8.4"
+    axe-core "^4.9.0"
     chrome-launcher "^1.1.1"
     configstore "^5.0.1"
     csp_evaluator "1.1.1"
