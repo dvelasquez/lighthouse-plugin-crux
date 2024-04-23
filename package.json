@@ -17,7 +17,7 @@
     "run:gather-run": "lighthouse https://github.com/GoogleChrome/lighthouse --plugins=lighthouse-plugin-crux --only-categories=lighthouse-plugin-crux --chrome-flags='--headless' --view"
   },
   "peerDependencies": {
-    "lighthouse": "^10.0.0 || ^11.0.0"
+    "lighthouse": "^10.0.0 || ^11.0.0 || ^12.0.0"
   },
   "devDependencies": {
     "@types/eslint": "8.56.10",
@@ -31,7 +31,7 @@
     "eslint": "9.1.1",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-prettier": "5.1.3",
-    "lighthouse": "11.7.1",
+    "lighthouse": "12.0.0",
     "prettier": "3.2.5",
     "rimraf": "5.0.5",
     "ts-node": "10.9.2",
