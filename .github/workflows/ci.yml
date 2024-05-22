@@ -6,15 +6,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: volta-cli/action@v4
-      - name: Cache yarn cache using cache-action
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/yarn
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
       - name: Install, link plugin locally, and run
         run: |
-          yarn install --frozen-lockfile
-          yarn link
-          yarn link lighthouse-plugin-crux
+          npm ci
+          npm link
+          npm link lighthouse-plugin-crux
