@@ -12,10 +12,10 @@ export default {
     { path: 'lighthouse-plugin-crux/lib/audits/cls-origin-audit.js' },
     { path: 'lighthouse-plugin-crux/lib/audits/fcp-audit.js' },
     { path: 'lighthouse-plugin-crux/lib/audits/fcp-origin-audit.js' },
-    { path: 'lighthouse-plugin-crux/lib/audits/fid-audit.js' },
-    { path: 'lighthouse-plugin-crux/lib/audits/fid-origin-audit.js' },
     { path: 'lighthouse-plugin-crux/lib/audits/lcp-audit.js' },
     { path: 'lighthouse-plugin-crux/lib/audits/lcp-origin-audit.js' },
+    { path: 'lighthouse-plugin-crux/lib/audits/inp-audit.js' },
+    { path: 'lighthouse-plugin-crux/lib/audits/inp-origin-audit.js' },
   ],
   groups: {
     page: {
@@ -39,12 +39,12 @@ export default {
       // 5 (CLS)
       { id: 'crux-fcp', weight: 0, group: 'page' },
       { id: 'crux-lcp', weight: 1, group: 'page' },
-      { id: 'crux-fid', weight: 1, group: 'page' },
       { id: 'crux-cls', weight: 1, group: 'page' },
+      { id: 'crux-inp', weight: 1, group: 'page' },
       { id: 'crux-fcp-origin', weight: 0, group: 'origin' },
       { id: 'crux-lcp-origin', weight: 0, group: 'origin' },
-      { id: 'crux-fid-origin', weight: 0, group: 'origin' },
       { id: 'crux-cls-origin', weight: 0, group: 'origin' },
+      { id: 'crux-inp-origin', weight: 0, group: 'origin' },
     ],
   },
 } as LH.Config.Plugin;
