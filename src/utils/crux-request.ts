@@ -7,7 +7,7 @@ export interface CrUXRequestApiBaseOptions {
   effectiveConnectionType?: EffectiveConnectionType;
   formFactor?: FormFactor;
   metrics?: Array<
-    'first_contentful_paint' | 'first_input_delay' | 'largest_contentful_paint' | 'cumulative_layout_shift'
+    'first_contentful_paint' | 'largest_contentful_paint' | 'cumulative_layout_shift' | 'interaction_to_next_paint'
   >;
 }
 export interface CrUXRequestApiOriginOptions extends CrUXRequestApiBaseOptions {
@@ -22,8 +22,8 @@ export interface CrUXRequestApiUrlOptions extends CrUXRequestApiBaseOptions {
 export enum MetricsOptions {
   CUMULATIVE_LAYOUT_SHIFT = 'cumulative_layout_shift',
   FIRST_CONTENTFUL_PAINT = 'first_contentful_paint',
-  FIRST_INPUT_DELAY = 'first_input_delay',
   LARGEST_CONTENTFUL_PAINT = 'largest_contentful_paint',
+  INTERACTION_TO_NEXT_PAINT = 'interaction_to_next_paint',
 }
 export interface CrUXMetricHistogram {
   start: number | string;
@@ -54,7 +54,8 @@ export async function cruxRequest(
     if (cruxToken || CRUX_API_TOKEN) {
       cruxToken = cruxToken || CRUX_API_TOKEN;
       const response = await fetch(apiUrl + cruxToken, { method: 'POST', body: JSON.stringify(opts) });
-      return await response.json() as CrUXResponseApi;
+      const responseAsJson =  await response.json() as CrUXResponseApi;
+      return responseAsJson;
     } else {
       throw new Error('No CrUX API token provided');
     }

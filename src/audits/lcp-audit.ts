@@ -12,7 +12,7 @@ export default class LcpAudit extends Audit {
   static get meta() {
     return {
       id: 'crux-lcp',
-      title: 'Largest Contentful Paint (Origin)',
+      title: 'Largest Contentful Paint (Url)',
       description: `Largest Contentful Paint (LCP) marks the time in the page load timeline when the page's main content has likely loaded. The value is 75th percentile of the origin traffic. [Learn more about LCP](https://web.dev/lcp/)`,
       scoreDisplayMode: 'numeric' as LH.Audit.ScoreDisplayMode,
       requiredArtifacts: ['URL', 'settings'] as LH.Audit.Meta['requiredArtifacts'],

@@ -102,8 +102,8 @@ function createDistributionsTable({ histogram }: { histogram: CrUXMetricHistogra
  *
  * FCP: Fast < 1.0 s,   Slow > 3.0 s
  * LCP: Fast < 2.5 s,   Slow > 4.0 s
- * FID: Fast < 100 ms,  Slow > 300 ms
  * CLS: Fast < 0.10,    Slow > 0.25
+ * INP: Fast < 200 ms,  Slow > 500 ms
  *
  * `p10` value is calibrated to return 0.9 for the fast value,
  * `median` value returns 0.5.
@@ -118,11 +118,11 @@ function getMetricRange(metric: string): { p10: number; median: number } {
     case 'fcp':
       return { p10: 1000, median: 3000 };
     case 'lcp':
-      return { p10: 2500, median: 4000 };
-    case 'fid':
-      return { p10: 100, median: 300 };
+      return { p10: 2500, median: 4000 };  
     case 'cls':
       return { p10: 0.1, median: 0.25 };
+    case 'inp':
+      return { p10: 200, median: 500 };
     default:
       throw new Error(`Invalid metric range: ${metric}`);
   }
@@ -131,9 +131,10 @@ function getMetricRange(metric: string): { p10: number; median: number } {
 function formatMetric(metric: string, value: number): string {
   switch (metric) {
     case 'fcp':
+      return round(value / 1000, 1).toFixed(1) + ' s';
     case 'lcp':
       return round(value / 1000, 1).toFixed(1) + ' s';
-    case 'fid':
+    case 'inp':
       return round(round(value / 10) * 10) + ' ms';
     case 'cls':
       return value === 0 ? '0' : value === 0.1 ? '0.10' : round(value, 3).toString();
