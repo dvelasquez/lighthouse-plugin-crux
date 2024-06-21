@@ -23,7 +23,7 @@
     "@types/tap": "15.0.11",
     "cpy-cli": "5.0.0",
     "cross-env": "7.0.3",
-    "devtools-protocol": "0.0.1317198",
+    "devtools-protocol": "0.0.1317765",
     "lighthouse": "12.1.0",
     "rimraf": "5.0.7",
     "ts-node": "10.9.2",
@@ -34,8 +34,8 @@
     "lodash-es": "4.17.21"
   },
   "resolutions": {
-    "puppeteer/**/devtools-protocol": "0.0.1317198",
-    "puppeteer-core/**/devtools-protocol": "0.0.1317198"
+    "puppeteer/**/devtools-protocol": "0.0.1317765",
+    "puppeteer-core/**/devtools-protocol": "0.0.1317765"
   },
   "volta": {
     "node": "20.15.0",
