@@ -28,7 +28,7 @@
     "rimraf": "5.0.7",
     "ts-node": "10.9.2",
     "typed-query-selector": "2.11.2",
-    "typescript": "5.5.2"
+    "typescript": "5.5.3"
   },
   "dependencies": {
     "lodash-es": "4.17.21"
