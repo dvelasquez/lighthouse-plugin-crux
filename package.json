@@ -25,7 +25,7 @@
     "cross-env": "7.0.3",
     "devtools-protocol": "0.0.1323829",
     "lighthouse": "12.1.0",
-    "rimraf": "5.0.7",
+    "rimraf": "5.0.8",
     "ts-node": "10.9.2",
     "typed-query-selector": "2.11.2",
     "typescript": "5.5.3"
