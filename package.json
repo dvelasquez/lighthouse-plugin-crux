@@ -27,7 +27,7 @@
     "lighthouse": "12.1.0",
     "rimraf": "6.0.1",
     "ts-node": "10.9.2",
-    "typed-query-selector": "2.11.2",
+    "typed-query-selector": "2.11.3",
     "typescript": "5.5.3"
   },
   "dependencies": {
