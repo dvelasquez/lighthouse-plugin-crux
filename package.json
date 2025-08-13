@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@types/tap": "18.0.0",
-    "cpy-cli": "5.0.0",
+    "cpy-cli": "6.0.0",
     "cross-env": "10.0.0",
     "devtools-protocol": "0.0.1498597",
     "lighthouse": "12.8.1",
