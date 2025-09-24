@@ -38,7 +38,7 @@
     "puppeteer-core/**/devtools-protocol": "0.0.1519099"
   },
   "volta": {
-    "node": "22.19.0",
+    "node": "22.20.0",
     "npm": "11.6.0"
   }
 }
