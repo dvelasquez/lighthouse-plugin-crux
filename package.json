@@ -31,7 +31,7 @@
     "typescript": "5.9.3"
   },
   "dependencies": {
-    "lodash-es": "4.17.22"
+    "lodash-es": "4.17.23"
   },
   "resolutions": {
     "puppeteer/**/devtools-protocol": "0.0.1568893",
